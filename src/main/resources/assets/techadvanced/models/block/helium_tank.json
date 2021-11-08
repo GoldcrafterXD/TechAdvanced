@@ -1,0 +1,7 @@
+{
+  "parent": "techadvanced:block/tank",
+  "textures": {
+    "tank_topbottom": "techadvanced:block/tank/tank_topbottom",
+    "tank_block": "techadvanced:block/tank/helium_tank_block"
+  }
+}

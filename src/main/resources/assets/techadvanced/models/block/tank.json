@@ -1,0 +1,74 @@
+{
+    "display": {
+        "gui": {
+            "rotation": [ 30, 45, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.625, 0.625, 0.625 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.25, 0.25, 0.25 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "head": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 75, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.375, 0.375, 0.375 ]
+        }
+    },
+    "elements": [
+        {
+            "name": "Cube",
+            "from": [ 3, 0, 4 ], 
+            "to": [ 13, 15, 12 ], 
+            "faces": {
+                "north": { "texture": "#tank_block", "uv": [ 3, 1, 13, 16 ] },
+                "east": { "texture": "#tank_block", "uv": [ 4, 1, 12, 16 ] },
+                "south": { "texture": "#tank_block", "uv": [ 3, 1, 13, 16 ] },
+                "west": { "texture": "#tank_block", "uv": [ 4, 1, 12, 16 ] },
+                "up": { "texture": "#tank_topbottom", "uv": [ 3, 4, 13, 12 ] },
+                "down": { "texture": "#tank_topbottom", "uv": [ 3, 4, 13, 12 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 4, 0, 3 ], 
+            "to": [ 12, 15, 13 ], 
+            "faces": {
+                "north": { "texture": "#tank_block", "uv": [ 4, 1, 12, 16 ] },
+                "east": { "texture": "#tank_block", "uv": [ 3, 1, 13, 16 ] },
+                "south": { "texture": "#tank_block", "uv": [ 4, 1, 12, 16 ] },
+                "west": { "texture": "#tank_block", "uv": [ 3, 1, 13, 16 ] },
+                "up": { "texture": "#tank_topbottom", "uv": [ 4, 3, 12, 13 ] },
+                "down": { "texture": "#tank_topbottom", "uv": [ 4, 3, 12, 13 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 6, 15, 6 ], 
+            "to": [ 10, 16, 10 ], 
+            "faces": {
+                "north": { "texture": "#tank_topbottom", "uv": [ 0, 0, 4, 1 ] },
+                "east": { "texture": "#tank_topbottom", "uv": [ 0, 0, 4, 1 ] },
+                "south": { "texture": "#tank_topbottom", "uv": [ 0, 0, 4, 1 ] },
+                "west": { "texture": "#tank_topbottom", "uv": [ 0, 0, 4, 1 ] },
+                "up": { "texture": "#tank_topbottom", "uv": [ 0, 0, 4, 4 ] }
+            }
+        }
+    ]
+}

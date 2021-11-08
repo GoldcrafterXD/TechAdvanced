@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "techadvanced:uranium_ingot"
+    }
+  },
+  "result": {
+    "item": "techadvanced:uranium_block"
+  }
+}

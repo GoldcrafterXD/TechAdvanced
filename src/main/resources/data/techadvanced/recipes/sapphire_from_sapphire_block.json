@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "techadvanced:sapphire_block"
+    }
+  ],
+  "result": {
+    "item": "techadvanced:sapphire_ingot",
+    "count": 9
+  }
+}

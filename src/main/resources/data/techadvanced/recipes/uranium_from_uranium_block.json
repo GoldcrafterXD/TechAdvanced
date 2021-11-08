@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "techadvanced:tin_block"
+    }
+  ],
+  "result": {
+    "item": "techadvanced:tin_ingot",
+    "count": 9
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "techadvanced:silver_block"
+    }
+  ],
+  "result": {
+    "item": "techadvanced:silver_ingot",
+    "count": 9
+  }
+}

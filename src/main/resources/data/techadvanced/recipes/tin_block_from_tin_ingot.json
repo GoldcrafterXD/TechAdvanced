@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "techadvanced:tin_ingot"
+    }
+  },
+  "result": {
+    "item": "techadvanced:tin_block"
+  }
+}

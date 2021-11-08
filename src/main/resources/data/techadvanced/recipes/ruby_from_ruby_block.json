@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "techadvanced:ruby_block"
+    }
+  ],
+  "result": {
+    "item": "techadvanced:ruby_ingot",
+    "count": 9
+  }
+}
