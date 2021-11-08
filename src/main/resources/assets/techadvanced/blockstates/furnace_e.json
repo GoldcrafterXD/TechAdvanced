@@ -5,29 +5,29 @@
       "y": 90
     },
     "facing=east,lit=true": {
-      "model": "minecraft:block/furnace_e_on",
+      "model": "techadvanced:block/furnace_e_on",
       "y": 90
     },
     "facing=north,lit=false": {
-      "model": "minecraft:block/furnace_e"
+      "model": "techadvanced:block/furnace_e"
     },
     "facing=north,lit=true": {
-      "model": "minecraft:block/furnace_e_on"
+      "model": "techadvanced:block/furnace_e_on"
     },
     "facing=south,lit=false": {
-      "model": "minecraft:block/furnace_e",
+      "model": "techadvanced:block/furnace_e",
       "y": 180
     },
     "facing=south,lit=true": {
-      "model": "minecraft:block/furnace_e_on",
+      "model": "techadvanced:block/furnace_e_on",
       "y": 180
     },
     "facing=west,lit=false": {
-      "model": "minecraft:block/furnace_e",
+      "model": "techadvanced:block/furnace_e",
       "y": 270
     },
     "facing=west,lit=true": {
-      "model": "minecraft:block/furnace_e_on",
+      "model": "techadvanced:block/furnace_e_on",
       "y": 270
     }
   }

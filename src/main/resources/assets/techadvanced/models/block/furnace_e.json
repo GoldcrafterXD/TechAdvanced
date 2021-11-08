@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "top": "minecraft:block/machine_e_top",
+    "front": "techadvanced:block/furnace_e_front_off",
+    "side": "minecraft:block/machine_e_side"
+  }
+}

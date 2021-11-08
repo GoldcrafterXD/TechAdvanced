@@ -83,19 +83,19 @@ public class ModBlocks {
 
     //Machines
     public static final RegistryObject<Block> COMPRESSOR = registerBlock("compressor", () ->
-            new Block(BlockBehaviour.Properties.of(Material.METAL).strength(12f).destroyTime(2f)));
+            new MachineBlock(BlockBehaviour.Properties.of(Material.METAL).strength(12f).destroyTime(2f)));
 
     public static final RegistryObject<Block> PULVERIZER = registerBlock("pulverizer", () ->
-            new Block(BlockBehaviour.Properties.of(Material.METAL).strength(12f).destroyTime(2f)));
+            new MachineBlock(BlockBehaviour.Properties.of(Material.METAL).strength(12f).destroyTime(2f)));
 
     public static final RegistryObject<Block> OVEN_E = registerBlock("oven_e", () ->
-            new Block(BlockBehaviour.Properties.of(Material.METAL).strength(12f).destroyTime(2f)));
+            new MachineBlock(BlockBehaviour.Properties.of(Material.METAL).strength(12f).destroyTime(2f)));
 
     public static final RegistryObject<Block> PULVERIZER_E = registerBlock("pulverizer_e", () ->
-            new Block(BlockBehaviour.Properties.of(Material.METAL).strength(12f).destroyTime(2f)));
+            new MachineBlock(BlockBehaviour.Properties.of(Material.METAL).strength(12f).destroyTime(2f)));
 
     public static final RegistryObject<Block> COMPRESSOR_E = registerBlock("compressor_e", () ->
-            new Block(BlockBehaviour.Properties.of(Material.METAL).strength(12f).destroyTime(2f)));
+            new MachineBlock(BlockBehaviour.Properties.of(Material.METAL).strength(12f).destroyTime(2f)));
 
     //Machines End
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {
