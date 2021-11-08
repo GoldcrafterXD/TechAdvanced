@@ -1,32 +1,32 @@
 {
   "variants": {
-    "facing=east, lit=false": {
+    "facing=east,lit=false": {
       "model": "techadvanced:block/pulverizer_e",
       "y": 90
     },
-    "facing=east, lit=true": {
+    "facing=east,lit=true": {
       "model": "techadvanced:block/pulverizer_e_on",
       "y": 90
     },
-    "facing=north, lit=false": {
+    "facing=north,lit=false": {
       "model": "techadvanced:block/pulverizer_e"
     },
-    "facing=north, lit=true": {
+    "facing=north,lit=true": {
       "model": "techadvanced:block/pulverizer_e_on"
     },
-    "facing=south, lit=false": {
+    "facing=south,lit=false": {
       "model": "techadvanced:block/pulverizer_e",
       "y": 180
     },
-    "facing=south, lit=true": {
+    "facing=south,lit=true": {
       "model": "techadvanced:block/pulverizer_e_on",
       "y": 180
     },
-    "facing=west, lit=false": {
+    "facing=west,lit=false": {
       "model": "techadvanced:block/pulverizer_e",
       "y": 270
     },
-    "facing=west, lit=true": {
+    "facing=west,lit=true": {
       "model": "techadvanced:block/pulverizer_e_on",
       "y": 270
     }
