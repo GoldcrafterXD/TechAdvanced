@@ -109,7 +109,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> PULVERIZER = registerBlock("pulverizer", () ->
             new MachineBlock(BlockBehaviour.Properties.of(Material.METAL).strength(12f).destroyTime(2f)));
 
-    public static final RegistryObject<Block> OVEN_E = registerBlock("oven_e", () ->
+    public static final RegistryObject<Block> FURNACE_E = registerBlock("furnace_e", () ->
             new MachineBlock(BlockBehaviour.Properties.of(Material.METAL).strength(12f).destroyTime(2f)));
 
     public static final RegistryObject<Block> PULVERIZER_E = registerBlock("pulverizer_e", () ->

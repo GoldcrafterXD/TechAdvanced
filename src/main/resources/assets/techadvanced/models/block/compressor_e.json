@@ -2,7 +2,7 @@
   "parent": "minecraft:block/orientable",
   "textures": {
     "top": "techadvanced:block/machine_top",
-    "front": "techadvanced:block/furnace_e_front_on",
+    "front": "techadvanced:block/compressor_e_front_off",
     "side": "techadvanced:block/machine_side"
   }
 }

@@ -1,7 +1,8 @@
 package com.goldcrafterxd.techadvanced.item;
 
+import com.goldcrafterxd.fluid.ModFluids;
 import com.goldcrafterxd.techadvanced.TechAdvanced;
-import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.BucketItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fmllegacy.RegistryObject;
@@ -32,6 +33,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> RUBY = ITEMS.register("ruby",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TECHADVANCED_TAB)));
+
+    public static final RegistryObject<Item> OIL_BUCKET = ITEMS.register("oil_bucket",
+            () -> new BucketItem(() -> ModFluids.OIL_FLUID.get(),  new Item.Properties().stacksTo(1).tab(ModCreativeModeTab.TECHADVANCED_TAB)));
 
 
     public static void register(IEventBus eventBus){
