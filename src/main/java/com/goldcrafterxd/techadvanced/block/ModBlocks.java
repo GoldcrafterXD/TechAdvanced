@@ -24,10 +24,16 @@ public class ModBlocks {
     public static final RegistryObject<Block> TITANIUM_ORE = registerBlock("titanium_ore", () ->
             new Block(BlockBehaviour.Properties.of(Material.METAL).strength(12f).destroyTime(2f)));
 
+    public static final RegistryObject<Block> TITANIUM_ORE_NETHER = registerBlock("titanium_ore_nether", () ->
+            new Block(BlockBehaviour.Properties.of(Material.METAL).strength(12f).destroyTime(2f)));
+
     public static final RegistryObject<Block> TITANIUM_BLOCK = registerBlock("titanium_block", () ->
             new Block(BlockBehaviour.Properties.of(Material.METAL).strength(12f).destroyTime(2f)));
 
     public static final RegistryObject<Block> COBALT_ORE = registerBlock("cobalt_ore", () ->
+            new Block(BlockBehaviour.Properties.of(Material.METAL).strength(12f).destroyTime(2f)));
+
+    public static final RegistryObject<Block> COBALT_ORE_NETHER = registerBlock("cobalt_ore_nether", () ->
             new Block(BlockBehaviour.Properties.of(Material.METAL).strength(12f).destroyTime(2f)));
 
     public static final RegistryObject<Block> COBALT_BLOCK = registerBlock("cobalt_block", () ->
@@ -36,10 +42,16 @@ public class ModBlocks {
     public static final RegistryObject<Block> RUBY_ORE = registerBlock("ruby_ore", () ->
             new Block(BlockBehaviour.Properties.of(Material.METAL).strength(12f).destroyTime(2f)));
 
+    public static final RegistryObject<Block> RUBY_ORE_NETHER = registerBlock("ruby_ore_nether", () ->
+            new Block(BlockBehaviour.Properties.of(Material.METAL).strength(12f).destroyTime(2f)));
+
     public static final RegistryObject<Block> RUBY_BLOCK = registerBlock("ruby_block", () ->
             new Block(BlockBehaviour.Properties.of(Material.METAL).strength(12f).destroyTime(2f)));
 
     public static final RegistryObject<Block> SAPPHIRE_ORE = registerBlock("sapphire_ore", () ->
+            new Block(BlockBehaviour.Properties.of(Material.METAL).strength(12f).destroyTime(2f)));
+
+    public static final RegistryObject<Block> SAPPHIRE_ORE_NETHER = registerBlock("sapphire_ore_nether", () ->
             new Block(BlockBehaviour.Properties.of(Material.METAL).strength(12f).destroyTime(2f)));
 
     public static final RegistryObject<Block> SAPPHIRE_BLOCK = registerBlock("sapphire_block", () ->
@@ -48,10 +60,16 @@ public class ModBlocks {
     public static final RegistryObject<Block> SILVER_ORE = registerBlock("silver_ore", () ->
             new Block(BlockBehaviour.Properties.of(Material.METAL).strength(12f).destroyTime(2f)));
 
+    public static final RegistryObject<Block> SILVER_ORE_NETHER = registerBlock("silver_ore_nether", () ->
+            new Block(BlockBehaviour.Properties.of(Material.METAL).strength(12f).destroyTime(2f)));
+
     public static final RegistryObject<Block> SILVER_BLOCK = registerBlock("silver_block", () ->
             new Block(BlockBehaviour.Properties.of(Material.METAL).strength(12f).destroyTime(2f)));
 
     public static final RegistryObject<Block> TIN_ORE = registerBlock("tin_ore", () ->
+            new Block(BlockBehaviour.Properties.of(Material.METAL).strength(12f).destroyTime(2f)));
+
+    public static final RegistryObject<Block> TIN_ORE_NETHER = registerBlock("tin_ore_nether", () ->
             new Block(BlockBehaviour.Properties.of(Material.METAL).strength(12f).destroyTime(2f)));
 
     public static final RegistryObject<Block> TIN_BLOCK = registerBlock("tin_block", () ->
@@ -59,6 +77,9 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> URANIUM_ORE = registerBlock("uranium_ore", () ->
             new Block(BlockBehaviour.Properties.of(Material.METAL).strength(6f).destroyTime(2f)));
+
+    public static final RegistryObject<Block> URANIUM_ORE_NETHER = registerBlock("uranium_ore_nether", () ->
+            new Block(BlockBehaviour.Properties.of(Material.METAL).strength(12f).destroyTime(2f)));
 
     public static final RegistryObject<Block> URANIUM_BLOCK = registerBlock("uranium_block", () ->
             new Block(BlockBehaviour.Properties.of(Material.METAL).strength(12f).destroyTime(2f)));

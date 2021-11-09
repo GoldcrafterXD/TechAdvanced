@@ -16,7 +16,7 @@ import net.minecraftforge.event.world.BiomeLoadingEvent;
 
 public class ModOreGeneration {
     public static void generateOres(final BiomeLoadingEvent event) {
-        for (OreType ore : OreType.values()) {
+        for (OreTypeOverworld ore : OreTypeOverworld.values()) {
             OreConfiguration oreConfig = new OreConfiguration(
                     OreConfiguration.Predicates.STONE_ORE_REPLACEABLES,
                     ore.getBlock().get().defaultBlockState(), ore.getMaxVeinSize());
@@ -31,10 +31,33 @@ public class ModOreGeneration {
             ConfiguredFeature<?, ?> oreFeature = registerOreFeature(ore, oreConfig, configuredDecorator);
 
             event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, oreFeature);
+            event.getGeneration().addFeature(GenerationStep.Decoration.RAW_GENERATION, oreFeature);
+        }
+        for (OreTypeNether ore : OreTypeNether.values()) {
+            OreConfiguration oreConfig = new OreConfiguration(
+                    OreConfiguration.Predicates.NETHER_ORE_REPLACEABLES,
+                    ore.getBlock().get().defaultBlockState(), ore.getMaxVeinSize());
+
+            // bottomOffset -> minimum height for the ore
+            // maximum -> minHeight + maximum = top level (the vertical expansion of the ore, it grows x levels from bottomOffset)
+            // topOffset -> subtracted from the maximum to give actual top level
+            // ore effectively exists from bottomOffset to (bottomOffset + maximum - topOffset)
+            ConfiguredDecorator<RangeDecoratorConfiguration> configuredDecorator = RangeDecorator.RANGE.configured(
+                    new RangeDecoratorConfiguration(BiasedToBottomHeight.of(VerticalAnchor.bottom(), VerticalAnchor.belowTop(8), 8)));
+
+            ConfiguredFeature<?, ?> oreFeature = registerOreFeature(ore, oreConfig, configuredDecorator);
+
+            event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, oreFeature);
+            event.getGeneration().addFeature(GenerationStep.Decoration.RAW_GENERATION, oreFeature);
         }
     }
 
-    private static ConfiguredFeature<?, ?> registerOreFeature(OreType ore, OreConfiguration oreConfig, ConfiguredDecorator configuredDecorator) {
+    private static ConfiguredFeature<?, ?> registerOreFeature(OreTypeOverworld ore, OreConfiguration oreConfig, ConfiguredDecorator configuredDecorator) {
+        return Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, ore.getBlock().get().getRegistryName(),
+                Feature.ORE.configured(oreConfig).decorated(configuredDecorator)
+                        .squared().count(ore.getMaxVeinSize()));
+    }
+    private static ConfiguredFeature<?, ?> registerOreFeature(OreTypeNether ore, OreConfiguration oreConfig, ConfiguredDecorator configuredDecorator) {
         return Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, ore.getBlock().get().getRegistryName(),
                 Feature.ORE.configured(oreConfig).decorated(configuredDecorator)
                         .squared().count(ore.getMaxVeinSize()));
