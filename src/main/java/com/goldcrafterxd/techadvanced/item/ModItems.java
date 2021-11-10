@@ -1,7 +1,7 @@
 package com.goldcrafterxd.techadvanced.item;
 
 import com.goldcrafterxd.techadvanced.TechAdvanced;
-import com.goldcrafterxd.techadvanced.fluid.ModFluids;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fmllegacy.RegistryObject;
@@ -101,10 +101,25 @@ public class ModItems {
                     new Item.Properties().tab(ModCreativeModeTab.TECHADVANCED_TAB)));
         //TITANIUM END
     //TOOLS END
+    //ARMOR
+        //RUBY
+    public static final RegistryObject<Item> TITANIUM_HELMET = ITEMS.register("titanium_helmet",
+           () -> new ArmorItem(ModArmorMaterial.TITANIUM, EquipmentSlot.HEAD,
+                   new Item.Properties().tab(ModCreativeModeTab.TECHADVANCED_TAB)));
+
+    public static final RegistryObject<Item> TITANIUM_CHESTPLATE = ITEMS.register("titanium_chestplate",
+            () -> new ArmorItem(ModArmorMaterial.TITANIUM, EquipmentSlot.CHEST,
+                    new Item.Properties().tab(ModCreativeModeTab.TECHADVANCED_TAB)));
+
+    public static final RegistryObject<Item> TITANIUM_LEGGINGS = ITEMS.register("titanium_leggings",
+            () -> new ArmorItem(ModArmorMaterial.TITANIUM, EquipmentSlot.LEGS,
+                    new Item.Properties().tab(ModCreativeModeTab.TECHADVANCED_TAB)));
+
+    public static final RegistryObject<Item> TITANIUM_BOOTS = ITEMS.register("titanium_boots",
+            () -> new ArmorItem(ModArmorMaterial.TITANIUM, EquipmentSlot.FEET,
+                    new Item.Properties().tab(ModCreativeModeTab.TECHADVANCED_TAB)));
     //MISC
 
-    public static final RegistryObject<Item> OIL_BUCKET = ITEMS.register("oil_bucket",
-            () -> new BucketItem(() -> ModFluids.OIL_FLUID.get(),  new Item.Properties().stacksTo(1).tab(ModCreativeModeTab.TECHADVANCED_TAB)));
 
     //MISC END
 
