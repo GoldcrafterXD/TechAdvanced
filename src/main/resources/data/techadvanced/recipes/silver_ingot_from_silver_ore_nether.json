@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "group": "silver_ingot",
+  "ingredient": {
+    "item": "techadvanced:silver_ore_nether"
+  },
+  "result": "techadvanced:silver_ingot",
+  "experience": 0.7,
+  "cookingtime": 200,
+  "count": 2
+}

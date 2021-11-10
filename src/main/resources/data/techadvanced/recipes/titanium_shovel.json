@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " X",
+    " #",
+    " #"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "techadvanced:titanium_ingot"
+    }
+  },
+  "result": {
+    "item": "techadvanced:titanium_shovel"
+  }
+}

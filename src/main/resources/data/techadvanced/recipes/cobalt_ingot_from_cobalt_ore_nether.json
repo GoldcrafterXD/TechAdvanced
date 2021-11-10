@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "group": "cobalt_ingot",
+  "ingredient": {
+    "item": "techadvanced:cobalt_ore_nether"
+  },
+  "result": "techadvanced:cobalt_ingot",
+  "experience": 0.7,
+  "cookingtime": 200,
+  "count": 2
+}
